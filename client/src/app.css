@@ -1,0 +1,24 @@
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+   
+    width: 320px;
+    height: 300px;
+    transition: 150ms;
+    cursor: pointer;
+}
+
+
+.card-grid{
+    margin: 20px 30px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 1rem;
+}
