@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+
+  server:
+    container_name: store-server
+    restart: always
+    build: .
+    ports: 
+      - '8080:8080'
+    links: 
+      - mongo  
+  
+  mongo:
+    container_name: store-mongo
+    restart: always
+    image: mongo
+    ports: 
+      - '27017:27017'
+
+  client:
+    container_name: store-client
+    restart: always
+    build: ./client
+    ports: 
+      - '3000:3000'
+    depends_on: 
+      - 'server'    

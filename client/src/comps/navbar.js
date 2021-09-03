@@ -30,7 +30,9 @@ const Navbar =  () => {
 
 
         <div className="d-flex">
-            <Link className="nav-link" aria-current="page" to="/home/cart">Cart <span class="badge badge-light">{items.length}</span></Link>
+            <Link className="nav-link" aria-current="page" to="/home/cart"><b>Cart </b> 
+              <span class="badge badge-light rounded-pill bg-danger"> {items.length}</span>
+            </Link>
         </div>
 
                 </div>

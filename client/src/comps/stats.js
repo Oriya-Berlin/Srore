@@ -63,7 +63,7 @@ const Stats = () => {
                             <ul className="list-group list-group-flush">
                                 {
                                     top5UniqueSold.map((item, index) => (
-                                        <li className="list-group-item">({index+1}) {item._id}: {item.counter}</li>
+                                        <li className="list-group-item">({index+1}) {item.product_id}: {item.counter}</li>
                                     ))
                                 }
                             </ul>
